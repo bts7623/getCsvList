@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#csvFileInput {
+    display: none;
+}
+
+.selectBtn, .excelBtn {
+    padding: 6px 25px;
+    background-color: #FF6600;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.maker {
+    /* animation: colorChange 5s infinite; */
+    color: rgb(187, 187, 187);
+}
+/*
+@keyframes colorChange {
+    0% { color: rgb(0, 255, 170); }
+    25% { color: rgb(145, 161, 255); }
+    50% { color: rgb(255, 255, 124); }
+    75% { color: rgb(255, 129, 171); }
+    100% { color: rgb(31, 31, 31); }
+}
+*/

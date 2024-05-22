@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보화사업 인력풀 검색</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="file" name="csvFileInput" id="csvFileInput" accept=".csv" disabled>
+    <input type="text" id="selectNum" placeholder="추첨 번호 입력. ex) 1,2,3">
+    <label class="selectBtn" id="selectBtn" for="csvFileInput">
+        조회
+    </label>
+    <input type="checkbox" id="sortCheckbox">
+    <label for="sortCheckbox">정렬하기</label>
+    <button id="downloadBtn">엑셀 다운로드</button>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<span class="maker">Export Info Pool Ver 2.1 - Made By BTS</span>
+    <table id="dataTable">
+        <thead>
+            <tr id="tableHeader"></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
