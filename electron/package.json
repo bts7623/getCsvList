@@ -1,0 +1,39 @@
+{
+  "name": "get-csv-list",
+  "version": "0.1.0",
+  "author": "koies bts",
+  "description": "get csv list",
+  "main": "main.js",
+  "scripts": {
+      "start": "electron .",
+      "deploy":"electron-builder --windows nsis:ia32"
+  },
+  
+  "build": {
+    "productName": "get-csv-list",
+    "appId": "com.electron.hello",
+    "asar": true,
+    "protocols": {
+      "name": "get-csv-list",
+      "schemes": [
+        "get-csv-list"
+      ]
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./resources/installer/Icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "./resources/installer/",
+      "output": "./exeResult/",
+      "app": "."
+    }
+  }
+}

@@ -11,3 +11,8 @@ A simple program that extracts raw data mapped to the entered number from a csv 
 5. Click the [Excel] button
 6. Download the inquired data as an Excel file
 7. If you want to use a new csv file, you need to refresh it
+
+# exe File
+1. Converting a program to an installation file using an electron
+2. Created an exe file when npm deployment is performed in the electron folder
+3. You can run the exe file to install the windows app.(Windows Only)
